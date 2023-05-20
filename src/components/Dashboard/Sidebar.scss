@@ -1,0 +1,147 @@
+@import "https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+
+#Side_contain {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  border-radius: 30px;
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0px auto;
+  border-radius: 30px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: flex-start;
+  div {
+    line-height: 20px;
+    a {
+      font-weight: 300;
+      font-size: 2rem;
+      color: white;
+      display: block;
+      margin-bottom: 55px;
+      text-decoration: none;
+    }
+  }
+}
+.footer_text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.sidebar-nav div a:hover,
+.sidebar-nav div a:active,
+.sidebar-nav div a:focus {
+  background-color: transparent;
+  color: rgb(155, 243, 155);
+  font-weight: 500;
+}
+.sidebar-nav div :hover{
+  color: rgb(155, 243, 155);
+  .Sidebar_Text {
+        z-index: 1;
+      }
+}
+.sidebar-brand {
+  font-size: 40px;
+  color: white;
+  line-height: 44px;
+  font-weight: 800;
+  margin: 50px 0px;
+}
+
+// .sidebar-toggler{
+//   display: none;
+//   font-weight: 300;
+//   font-size: 40px;
+//   margin: 50px auto;
+//   background-color: black;
+//   border: 0px;
+// }
+// .sidebar-toggler>i{
+//     color: white;
+// }
+
+@media only screen and (min-width: 720px) and (max-width: 940px) {
+}
+
+@media only screen and (max-width: 960px) {
+  .sidebar-nav {
+    div > a {
+      font-weight: 400;
+      font-size: 1.3rem;
+      margin-bottom: 50px;
+    }
+    .footer_text {
+      font-size: 1rem;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #Side_contain {
+    margin-left: 0px;
+    background-color: white;
+  }
+  .Sidebar_Text {
+    //  display: none;
+    position: absolute;
+    color: black;
+    background-color: white;
+    z-index: -1;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 4px 10px;
+  }
+  .sidebar-brand {
+    display: none;
+  }
+  .sidebar-toggler {
+    display: flex;
+  }
+  .sidebar-nav {
+    align-items: center;
+    div > a > i {
+      color: #666666;
+      font-size: 25px;
+    }
+  }
+  // .sidebar-nav div:hover
+  // {
+  //   .Sidebar_Text {
+  //     z-index: 1;
+  //   }
+  // }
+  .sidebar-toggler {
+    background-color: transparent;
+  }
+  //   .sidebar-toggler>i{
+  //     font-size: 25px;
+  //     color: #666666;
+  // }
+  .footer_text {
+    display: none;
+  }
+  #Side_contain {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+}

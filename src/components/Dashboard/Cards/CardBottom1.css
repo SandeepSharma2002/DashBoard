@@ -1,0 +1,18 @@
+.B_main{
+    width: 40vh;
+    height: 40vh;
+    margin: auto;
+}
+
+/* @media only screen and (min-width: 650px) and (max-width: 1200px) {
+    .B_main{
+        height: 40vh;
+    }
+  }
+  */
+  @media only screen and (max-width: 420px) {
+    .B_main{
+        height: 30vh;
+        width: 30vh;
+    } 
+   }
